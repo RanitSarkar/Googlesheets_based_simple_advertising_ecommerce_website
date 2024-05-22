@@ -1,8 +1,9 @@
-import firebase_admin
-from firebase_admin import firestore
+from flask import Flask, render_template, redirect, jsonify, request, url_for
+import datetime as dt
+import requests
 
-# Application Default credentials are automatically created.
-app = firebase_admin.initialize_app()
-db = firestore.client()
+app = Flask(__name__)
 
-
+@app.route("/")
+def home():
+    return render_template("index.html")
