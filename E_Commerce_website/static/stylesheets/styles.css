@@ -196,3 +196,20 @@ ul {
   font-size: 14px;
   color: #878787;
 }
+#part-1 {
+    background: url(background.jpg);
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.outer{
+    padding:20%;
+}
+.form-row{
+    background-color: rgb(174, 255, 0);
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
