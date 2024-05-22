@@ -54,5 +54,5 @@ Stay tuned for these updates in the consecutive releases!
 
 2. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/simple-web-commerce-platform.git
-   cd simple-web-commerce-platform
+   [git clone https://github.com/yourusername/simple-web-commerce-platform.git
+   cd simple-web-commerce-platform](https://github.com/RanitSarkar/Google_sheet_based_Ecommerce_website)
