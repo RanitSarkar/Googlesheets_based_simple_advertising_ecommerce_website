@@ -16,9 +16,9 @@ def home():
 def signup_page():
     global otp
     my_email = "codewithmrpy@gmail.com"
-    password = "eaflyqlwydcznrgt"
+    password = "**********"
     if request.method == "POST":
-        otp = random.randint(100000, 999999)
+        otp = random.randint(519166, 8451653)
         email = request.form['email']
         # password = request.form['password']
         with smtplib.SMTP("smtp.gmail.com", 587) as connection:
