@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-commerce</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+        overflow: hidden;
+        text-shadow: 2px 2px 4px #fbf8f8;
+      }
+      .card img {
+        width: 100%;
+        border-radius: 5px;
+        flex-shrink: 0;
+        transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+      }
+      .card-info {
+        text-align: center;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.7s ease-in-out;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .card:hover .card-info {
+        left: 0px;
+        transition: all 0.7s ease-in-out;
+        clip-path: circle(75%);
+      }
+      .card:hover {
+        transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+        transform: scale(0.97);
+      }
+      .card:hover img {
+        transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+        transform: scale(1.6) rotate(10deg);
+        filter: blur(1px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- place navbar here -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../static/LOGO.png"
+              alt=""
+              width="80"
+              height="50"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="user">hello @Mrpy1858</div>
+    <main class="container adv">
+      <script>
+        fetch(
+          "https://docs.google.com/spreadsheets/d/1CJiAQjAm7x9nbWgPJh8nCkpiQZjobj-ahoBQRtp3zqM/gviz/tq?tqx=out:csv"
+        );
+      </script>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="../static/adv1.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../static/adv2.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../static/adv3.png" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="heading1">Products</div>
+      <div class="container">
+        <div id="products-container" class="row justify-content-center"></div>
+      </div>
+    </main>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>India</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>xxxxxxxxx</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>codewithmrpy@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="../static/LOGO.png"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed
+                    do eiusmod tempor incididuntut consec tetur adipisicing elit,
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">services</a></li>
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Expert Team</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Latest News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the form
+                    below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gybBogGzOgGOOKoOgBfXj7K5tMaPp1FO+p+KzOrp7W5P1tb80P"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-xPoL2RjAN2y2Y1mszYhiG8qljN6EGzzBw4r0x6i2y5zTXbPSA7C64PBJ5Khj8vza"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const products = [
+        {
+          id: 1,
+          name: "Product 1",
+          description: "This is a great product.",
+          price: 19.99,
+          image: "../static/img1.png",
+        },
+        {
+          id: 2,
+          name: "Product 2",
+          description: "This is another great product.",
+          price: 29.99,
+          image: "../static/img2.png",
+        },
+        {
+          id: 3,
+          name: "Product 3",
+          description: "This is yet another great product.",
+          price: 39.99,
+          image: "../static/img3.png",
+        },
+        {
+          id: 4,
+          name: "Product 4",
+          description: "This is yet another great product.",
+          price: 39.99,
+          image: "../static/img4.png",
+        },
+        {
+          id: 5,
+          name: "Product 5",
+          description: "This is yet another great product.",
+          price: 39.99,
+          image: "../static/img5.png",
+        },
+        {
+          id: 6,
+          name: "Product 6",
+          description: "This is yet another great product.",
+          price: 39.99,
+          image: "../static/img6.png",
+        },
+        {
+          id: 7,
+          name: "Product 7",
+          description: "This is yet another great product.",
+          price: 39.99,
+          image: "../static/img7.png",
+        },
+      ];
+      function renderProducts() {
+        const container = document.getElementById("products-container");
+        container.innerHTML = "";
+        products.forEach((product) => {
+          const card = document.createElement("div");
+          card.className = "col-md-4 col-sm-6 mb-4";
+          card.innerHTML = `
+            <div class="card">
+              <img src="${product.image}" class="card-img-top" alt="${product.name}" />
+              <div class="card-info">
+                <h5 class="card-title">${product.name}</h5>
+                <p class="card-text">${product.description}</p>
+                <p class="card-price">$${product.price}</p>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      }
+      document.addEventListener("DOMContentLoaded", renderProducts);
+    </script>
+  </body>
+</html>
